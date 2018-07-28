@@ -10,12 +10,12 @@
 :: 1.0 Base CSS
 :: 2.0 Top Header Area CSS
 :: 3.0 Menu Area CSS
-:: 4.0 Wellcome Area CSS 
-:: 5.0 Top Feature Area CSS 
-:: 6.0 Blog Area CSS 
-:: 7.0 Instagram Area CSS 
-:: 8.0 Footer Social Area CSS 
-:: 9.0 Goole Map Area CSS
+:: 4.0 Welcome Area CSS
+:: 5.0 Top Feature Area CSS
+:: 6.0 Blog Area CSS
+:: 7.0 Instagram Area CSS
+:: 8.0 Footer Social Area CSS
+:: 9.0 Google Map Area CSS
 :: 10.0 Sidebar Area CSS
 :: 11.0 Breadcumb Area CSS
 :: 12.0 Paginatio Area CSS
@@ -25,7 +25,8 @@
 
 /* ***** Fonts ***** */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two');*/
+@import url('https://fonts.googleapis.com/css?family=Athiti:100,200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700');
 
 /* ***** Import CSS ***** */
 
@@ -47,18 +48,25 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Athiti", "Poppins", serif;
     position: relative;
     z-index: auto;
 }
 
-h1,
+h1{
+  font-family: "Athiti", serif;
+  font-size: 60px;
+  margin-bottom: 0;
+  padding: 0px 0 5px 0;
+  display: inline-block;
+  color: #232d37;
+  },
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Athiti", "Poppins", serif;
     font-weight: 700;
     color: #232d37;
     line-height: 1.25;
@@ -252,7 +260,7 @@ li {
 }
 
 .font-shadow-into-light {
-    font-family: 'Shadows Into Light Two', cursive !important;
+    font-family: "Athiti", "Poppins", serif !important;
 }
 
 .yummy-table {
@@ -325,15 +333,15 @@ li {
 
 .top_header_area {
     width: 100%;
-    height: 40px;
-    border-bottom: 1px solid #ebebeb;
+    height: 60px;
+    border-bottom: 2px solid #ebebeb;
 }
 
 .top_header_area .top_social_bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 40px;
+    height: 60px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -341,7 +349,7 @@ li {
 
 
 .top_header_area .top_social_bar > a {
-    font-size: 12px;
+    font-size: 18px;
     color: #232d37;
     margin-right: 30px;
 }
@@ -355,13 +363,13 @@ li {
 }
 
 .top_header_area .signup-search-area {
-    height: 40px;
+    height: 60px;
     position: relative;
     z-index: 3;
 }
 
 .top_header_area .signup-search-area a {
-    font-size: 13px;
+    font-size: 18px;
     color: #222;
 }
 
@@ -404,27 +412,28 @@ li {
 
 .search-hidden-form #search-anything {
     width: 100%;
-    height: 30px;
+    height: 40px;
     border: 1px solid #ddd;
-    top: 5px;
+    top: 10px;
     position: relative;
     padding: 5px 10px;
+    font-size: 16px;
 }
 
 .search-hidden-form span {
-    line-height: 30px;
+    line-height: 40px;
     width: 30px;
-    height: 30px;
+    height: 40px;
     position: absolute;
     display: block;
     text-align: center;
-    top: 5px;
+    top: 10px;
     right: 0;
     border: 1px solid #ddd;
     color: #888;
     cursor: pointer;
     z-index: 5;
-    font-size: 13px;
+    font-size: 18px;
     border-left: none;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -438,13 +447,8 @@ li {
 :: 3.0 Menu Area CSS
 -------------------- */
 
-.logo_area .yummy-logo {
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 60px;
-    margin-bottom: 0;
-    padding: 35px 0 20px 0;
-    display: inline-block;
-    color: #232d37;
+.logo_area .logo-img {
+
 }
 
 .navbar.navbar-expand-lg {
@@ -452,10 +456,10 @@ li {
 }
 
 .navbar.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 25px 30px;
+    padding: 20px 30px 20px 30px;
     color: #232d37;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 19px;
 }
 
 .navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
@@ -466,7 +470,7 @@ li {
 .dropdown-item {
     font-weight: 500;
     color: #232d37;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -478,7 +482,7 @@ li {
 }
 
 /* --------------------
-:: 4.0 Wellcome Area CSS 
+:: 4.0 Welcome Area CSS
 -------------------- */
 
 .welcome-single-slide {
@@ -569,7 +573,7 @@ li {
 }
 
 /* --------------------
-:: 5.0 Top Feature Area CSS 
+:: 5.0 Top Feature Area CSS
 -------------------- */
 
 .categories_area {
@@ -617,7 +621,7 @@ li {
 }
 
 /* --------------------
-:: 6.0 Blog Area CSS 
+:: 6.0 Blog Area CSS
 -------------------- */
 
 .post-thumb img {
@@ -744,7 +748,7 @@ li {
 }
 
 /* --------------------
-:: 7.0 Instagram Area CSS 
+:: 7.0 Instagram Area CSS
 -------------------- */
 
 .instagram_gallery_item {
@@ -811,7 +815,7 @@ li {
 
 
 /* --------------------
-:: 8.0 Footer Social Area CSS 
+:: 8.0 Footer Social Area CSS
 -------------------- */
 
 .footer-social-area {
@@ -844,7 +848,7 @@ li {
 }
 
 .footer-logo-area .yummy-logo {
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: "Athiti", serif;
     font-size: 60px;
     margin-bottom: 0;
     padding: 0 0 20px 0;
@@ -877,7 +881,7 @@ li {
 }
 
 /* --------------------
-:: 9.0 Goole Map Area CSS
+:: 9.0 Google Map Area CSS
 -------------------- */
 
 #googleMap {
@@ -1190,7 +1194,7 @@ li {
     background-position: center center;
 }
 
-/* -------------------- 
+/* --------------------
 :: 14.0 Single Blog CSS
 -------------------- */
 
