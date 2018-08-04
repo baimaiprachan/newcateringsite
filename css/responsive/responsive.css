@@ -10,14 +10,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    h1 {
-      font-size: 2em;
-      color: red;
-    }
-    h2 {
-      font-size: 1.5em;
-      color: red;
-    }
     .post-author a,
     .post-date a,
     .post-favourite a,
@@ -44,11 +36,12 @@
 @media (min-width: 320px) and (max-width: 767px) {
     h1 {
       font-size: 2em;
-      color: red;
     }
     h2 {
       font-size: 1.5em;
-      color: red;
+    }
+    .logo_area .logo-img {
+      width: 80%
     }
     .post-author a,
     .post-date a,
